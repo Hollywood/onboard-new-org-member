@@ -11,13 +11,16 @@ export = (app: Application) => {
 
     const content = Buffer.from(res.data.content, 'base64').toString('utf8')
 
+    const yaml = require('js-yaml')
+    const config = yaml.safeLoad(content)
+
     const response = await context.github.query(`query ($login: String!, $team: String!) {
       organization (login: $login) {
         team (slug: $team) {
           id
         }
       }
-    }`, { login: "ORG_NAME", team: "DEFAULT_TEAM_NAME" })
+    }`, { login: config.orgName, team: config.defaultTeam })
 
     // The `Team` GraphQL type doesn't include the databaseId
     // so we can hack around it by decoding the node id.
