@@ -1,10 +1,10 @@
 import { Application } from 'probot' // eslint-disable-line no-unused-vars
 
 export = (app: Application) => {
-  app.on('member_added', async (context) => {
-
+  app.on('organization.member_added', async (context) => {
+    context.log("event received")
     const res = await context.github.repos.getContents({
-      owner: context.payload.repository.owner.login,
+      owner: context.payload.organization.login,
       repo: 'org-settings',
       path: '.github/add-member-to-team.yml'
     })
@@ -32,7 +32,7 @@ export = (app: Application) => {
 
     const teamParams = Object.assign({}, {
       team_id: id || 0,
-      username: context.payload.login || ''
+      username: context.payload.membership.user.login || ''
     } || {})
 
     await context.github.teams.addOrUpdateMembership(teamParams).catch((e) => console.log(e))
