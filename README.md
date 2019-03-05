@@ -4,6 +4,20 @@
 
 ## Setup
 
+You will need to create a configuration file in a repository named `org-settings` called `add-members-to-team.yml`:
+
+```
+# Configuration for Add-Member-To-Team
+
+# Org to run the bot on
+orgName: ORG_NAME
+
+# Name of team to add new members to
+defaultTeam: DEFAULT_TEAM
+```
+
+To build the application run the following:
+
 ```sh
 # Install dependencies
 npm install
