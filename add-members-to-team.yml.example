@@ -1,7 +1,7 @@
 # Configuration for Add-Member-To-Team
 
-# Turn on Monitor Mode. In this mode the repo visibility is not modified and only an Issue is created
+# Org to run the bot on
 orgName: ORG_NAME
 
-# Enables detection of repos that change visibility from private to public (not just newly created ones)
+# Name of team to add new members to
 defaultTeam: DEFAULT_TEAM
