@@ -1,7 +1,7 @@
 import { Application } from 'probot' // eslint-disable-line no-unused-vars
 
 export = (app: Application) => {
-  app.on('organization.member_added', async (context) => {
+  app.on('member_added', async (context) => {
 
     const res = await context.github.repos.getContents({
       owner: context.payload.repository.owner.login,
