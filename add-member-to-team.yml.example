@@ -1,0 +1,19 @@
+# Configuration for Add-Member-To-Team
+
+# Org to run the bot on
+orgName: DEFAULT_ORG
+
+# Settings repo
+settingsRepo: org-settings
+
+# Name of team to add new members to
+defaultTeam: DEFAULT_TEAM
+
+# Repo to add Onboard Issue to
+onboardRepo: Onboarding
+
+# Path to Issue template
+issuePath: .github/templates/on-board-template.md
+
+# Users/Groups that should be cc'ed on the issue. Should be users/groups separated by a space.
+ccList: '@user123 @user456'
