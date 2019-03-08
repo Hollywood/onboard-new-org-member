@@ -1,7 +1,0 @@
-# Configuration for Add-Member-To-Team
-
-# Org to run the bot on
-orgName: ORG_NAME
-
-# Name of team to add new members to
-defaultTeam: DEFAULT_TEAM
