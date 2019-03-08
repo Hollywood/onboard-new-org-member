@@ -12,6 +12,9 @@ defaultTeam: DEFAULT_TEAM
 # Repo to add Onboard Issue to
 onboardRepo: Onboarding
 
+# Phrase/Word to replace with the new member's handle
+replacePhrase: NEW_USER
+
 # Path to Issue template
 issuePath: .github/templates/on-board-template.md
 
