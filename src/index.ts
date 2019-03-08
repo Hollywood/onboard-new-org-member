@@ -50,7 +50,7 @@ export = (app: Application) => {
     }`, { owner: config.orgName, repo:config.settingsRepo})
 
     var issueBody = body.repository.object.text
-    issueBody = issueBody.replace(config.replacePhrase, `@${context.payload.membership.user.login}`)
+    issueBody = issueBody.replace(new RegExp(`${config.replacePhrase}`, 'g'), `@${context.payload.membership.user.login}`)
     issueBody += (config.ccList) ? `\n\n<h6>/cc ${config.ccList}</h6>` : ''
 
 
