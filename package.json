@@ -1,12 +1,12 @@
 {
-  "name": "add-member-to-team",
+  "name": "onboard-new-org-member",
   "version": "1.0.0",
   "description": "An application to automatically add new members to an organization to a team or list of teams within the organizaton.",
   "author": "Jon Cardona <hollywood@github.com>",
   "license": "ISC",
-  "repository": "https://github.com//add-member-to-team.git",
-  "homepage": "https://github.com//add-member-to-team",
-  "bugs": "https://github.com//add-member-to-team/issues",
+  "repository": "https://github.com/hollywood/onboard-new-org-member.git",
+  "homepage": "https://github.com/hollywood/onboard-new-org-member",
+  "bugs": "https://github.com/hollywood/onboard-new-org-member/issues",
   "keywords": [
     "probot",
     "github",

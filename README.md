@@ -1,4 +1,4 @@
-# Add Member to Team
+# Onboard New Org Member
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that will automatically add new members of an organization to a team as well as post an on-boarding issue for the member in a specified repository. 
 
