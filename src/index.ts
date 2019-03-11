@@ -6,7 +6,7 @@ export = (app: Application) => {
     const res = await context.github.repos.getContents({
       owner: context.payload.organization.login,
       repo: 'org-settings',
-      path: '.github/add-member-to-team.yml'
+      path: '.github/onboard-new-org-member.yml'
     })
 
     const content = Buffer.from(res.data.content, 'base64').toString('utf8')

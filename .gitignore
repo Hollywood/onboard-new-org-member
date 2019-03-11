@@ -49,6 +49,7 @@ bower_components
 .sass-cache
 connect.lock
 typings
+*.pem
 
 # Logs
 logs
@@ -81,7 +82,7 @@ jspm_packages/
 
 # dotenv environment variables file
 # DO NOT COMMIT YOUR PAT
-#.env
+.env
 
 # next.js build output
 .next
