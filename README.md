@@ -9,8 +9,8 @@
 
 ## Get Started
 
-1. [Configure the GitHub App](https://github.com/apps/add-member-to-team)
-2. Create a repo named `org-settings` and in it a file `.github/add-member-to-team.yml` as described in the [How it Works](#How-it-Works) section to configure settings (and override defaults)
+1. [Configure the GitHub App](https://github.com/apps/onboard-new-org-member)
+2. Create a repo named `org-settings` and in it a file `.github/onboard-new-org-member.yml` as described in the [How it Works](#How-it-Works) section to configure settings (and override defaults)
 3. It will then add any members new to your organization to the specified team as well as create an on-boarding issue for the user.
 
 ## How it Works
@@ -19,7 +19,7 @@ By default when a member accepts an Org invite, they will be added to a default 
 
 
 ```yml
-# Configuration for Add-Member-To-Team
+# Configuration for onboard-new-org-member
 
 # Org to run the bot on
 orgName: DEFAULT_ORG
@@ -51,13 +51,13 @@ See [docs/deploy.md](docs/deploy.md) if you would like to run your own instance 
 
 Possible Environment Variables:
 
-- FILE_NAME [default: '.github/add-member-to-team.yml'] - Sets the location/file name of the config yml file
+- FILE_NAME [default: '.github/onboard-new-org-member.yml'] - Sets the location/file name of the config yml file
 - ORG_WIDE_REPO_NAME [default: 'org-settings'] - Set the repo where to find the config yml file
 
 
 ## Contributing
 
-If you have suggestions for how add-member-to-team could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
+If you have suggestions for how onboard-new-org-member could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
 
 ## Future Enhancements
 
