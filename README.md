@@ -30,8 +30,8 @@ settingsRepo: org-settings
 # Name of team to add new members to
 defaultTeam: DEFAULT_TEAM
 
-# Repo to add Onboard Issue to
-onboardRepo: on-boarding
+# Repo to add Onboard Issue to (name whatever you'd like)
+onboardRepo: Onboarding
 
 # Phrase/Word to replace with the new member's handle
 replacePhrase: NEW_USER
