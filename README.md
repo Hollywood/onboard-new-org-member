@@ -21,13 +21,13 @@ By default when a member accepts an Org invite, they will be added to a default 
 ```yml
 # Configuration for onboard-new-org-member
 
-# Org to run the bot on
+# Org to run the bot on (must be lowercase)
 orgName: DEFAULT_ORG
 
 # Settings repo
 settingsRepo: org-settings
 
-# Name of team to add new members to
+# Name of team to add new members to (must be lowercase)
 defaultTeam: DEFAULT_TEAM
 
 # Repo to add Onboard Issue to (name whatever you'd like)
